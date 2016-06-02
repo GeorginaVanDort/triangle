@@ -5,7 +5,7 @@ var triangle = function(sideOne, sideTwo, sideThree){
   }
 
   else if (sideOne === sideTwo || sideTwo === sideThree || sideThree === sideOne){
-    return "Isoscoles"
+    return "Isosceles"
   }
 
   else if (sideOne + sideTwo <= sideThree || sideThree + sideOne <= sideTwo || sideTwo + sideThree <=sideOne){
@@ -14,6 +14,10 @@ var triangle = function(sideOne, sideTwo, sideThree){
 
   else if (sideOne !== sideTwo && sideTwo !== sideThree && sideOne !== sideThree){
     return "scalene";
+  }
+
+  else {
+    console.log("something's wrong"); 
   }
 
 };
